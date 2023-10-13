@@ -1,5 +1,3 @@
-
-
 export enum AppRoutes {
     MAIN = 'main',
     ABOUT = 'about'
@@ -7,4 +5,3 @@ export enum AppRoutes {
 
 export const getRouteMain = () => '/';
 export const getRouteAbout = () => '/about';
-
