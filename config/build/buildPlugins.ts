@@ -18,7 +18,8 @@ export function buildPlugins({ paths, isDev }: BuildOptions) {
             __IS_DEV__: JSON.stringify(isDev),
         }),
         new webpack.HotModuleReplacementPlugin(),
-        // Анализ бандла файлов
-        // new BundleAnalyzerPlugin(),
+        new BundleAnalyzerPlugin({
+            openAnalyzer: false,
+        }),
     ];
 }
