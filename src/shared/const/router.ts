@@ -1,6 +1,9 @@
 export enum AppRoutes {
     MAIN = 'main',
-    ABOUT = 'about'
+    ABOUT = 'about',
+
+    // Последний
+    NOT_FOUND = '*'
 }
 
 export const getRouteMain = () => '/';
