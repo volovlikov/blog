@@ -7,7 +7,9 @@ import {routeConfig} from '../config/routeConfig'
 export const AppRouter = () => {
     const renderWithWrapper = useCallback((route: AppRoutesProps) => {
         const element = (
-            <Suspense fallback={'...Loading'}>{route.element}</Suspense>
+            <div className='page-wrapper'>
+                <Suspense fallback={'...Loading'}>{route.element}</Suspense>
+            </div>
         )
 
         return (
