@@ -62,7 +62,9 @@ export default {
     // globalTeardown: undefined,
 
     // A set of global variables that need to be available in all test environments
-    // globals: {},
+    globals: {
+        __IS_DEV__: true,
+    },
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
@@ -73,7 +75,7 @@ export default {
     ],
 
     modulePaths: [
-        '<rootDir>src'
+        '<rootDir>src',
     ],
 
     // An array of file extensions your modules use
@@ -138,7 +140,7 @@ export default {
 
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
     setupFilesAfterEnv: [
-        '<rootDir>config/jest/setupTests.ts'
+        '<rootDir>config/jest/setupTests.ts',
     ],
 
     // The number of seconds after which a test is considered as slow and reported as such in the results.
