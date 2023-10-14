@@ -132,3 +132,8 @@ dist
 
 # storybook
 /storybook-static
+
+# loki
+.loki/report.json
+.loki/report.html
+
