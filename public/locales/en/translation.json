@@ -13,6 +13,8 @@
   "Переключить": "Переключить",
   "Короткий язык": "En",
   "Войти": "Login",
-  "Добавить": "increment",
-  "Убрать": "decrement"
+  "increment": "increment",
+  "decrement": "decrement",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }
