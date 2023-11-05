@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { ProfileSchema } from 'entities/Profile';
+import { ProfileSchema } from '../types/profile';
 
 const initialState: ProfileSchema = {
     readonly: true,
     isLoading: false,
-    data: undefined,
     error: undefined,
+    data: undefined,
 };
 
 export const profileSlice = createSlice({
@@ -14,7 +14,6 @@ export const profileSlice = createSlice({
     reducers: {},
 });
 
-export const {
-    actions: profileActions,
-    reducer: profileReducer,
-} = profileSlice;
+// Action creators are generated for each case reducer function
+export const { actions: profileActions } = profileSlice;
+export const { reducer: profileReducer } = profileSlice;

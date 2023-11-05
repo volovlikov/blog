@@ -1,4 +1,8 @@
-export { ProfileSchema, Profile } from './model/types/profileSchema';
+export {
+    Profile,
+    ProfileSchema,
+} from './model/types/profile';
+
 export {
     profileActions,
     profileReducer,

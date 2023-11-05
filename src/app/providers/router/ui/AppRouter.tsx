@@ -1,25 +1,24 @@
-import { Suspense, useCallback } from 'react';
+import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { AppRoutesProps } from 'shared/types/router';
-import { PageLoader } from 'widgets/PageLoader';
-import { routeConfig } from '../config/routeConfig';
+import { routeConfig } from 'shared/config/routeConfig/routeConfig';
+import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
 
-export const AppRouter = () => {
-    const renderWithWrapper = useCallback((route: AppRoutesProps) => {
-        const element = (
-            <div className="page-wrapper">
-                <Suspense fallback={<PageLoader />}>{route.element}</Suspense>
-            </div>
-        );
-
-        return (
+const AppRouter = () => (
+    <Routes>
+        {Object.values(routeConfig).map(({ element, path }) => (
             <Route
-                key={route.path}
-                path={route.path}
-                element={element}
+                key={path}
+                path={path}
+                element={(
+                    <Suspense fallback={<PageLoader />}>
+                        <div className="page-wrapper">
+                            {element}
+                        </div>
+                    </Suspense>
+                )}
             />
-        );
-    }, []);
+        ))}
+    </Routes>
+);
 
-    return <Routes>{Object.values(routeConfig).map(renderWithWrapper)}</Routes>;
-};
+export default AppRouter;

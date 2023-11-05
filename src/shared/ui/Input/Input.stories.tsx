@@ -1,18 +1,19 @@
+import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Input } from './Input';
+import { Input } from 'shared/ui/Input/Input';
 
 export default {
     title: 'shared/Input',
     component: Input,
     argTypes: {
-        background: { control: 'color' },
+        backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof Input>;
 
 const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
-export const Normal = Template.bind({});
-Normal.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     placeholder: 'Type text',
-    value: '123',
+    value: '123123',
 };
