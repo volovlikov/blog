@@ -769,6 +769,12 @@
       "userId": "1",
       "text": "hello",
       "id": "0J6kk5r"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "new comment",
+      "id": "gr_80oz"
     }
   ],
   "users": [
