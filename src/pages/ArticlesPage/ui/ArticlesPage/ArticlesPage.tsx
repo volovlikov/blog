@@ -12,7 +12,7 @@ import { useSelector } from 'react-redux';
 import {
     getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView,
 } from 'pages/ArticlesPage/model/selectors/articlesPageSelectors';
-import { Page } from 'shared/ui/Page/Page';
+import { Page } from 'widgets/Page/Page';
 import { fetchNextArticlesPage } from 'pages/ArticlesPage/model/services/fetchNextArticlesPage/fetchNextArticlesPage';
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
 import cls from './ArticlesPage.module.scss';
