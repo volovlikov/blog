@@ -9,12 +9,12 @@ import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
 import cls from './ArticleListItem.module.scss';
 import {
     Article, ArticleBlockType, ArticleTextBlock, ArticleView,
 } from '../../model/types/article';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
-import { AppLink } from 'shared/ui/AppLink/AppLink';
 
 interface ArticleListItemProps {
     className?: string;
@@ -61,7 +61,9 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                             target={target}
                             to={RoutePath.article_details + article.id}
                         >
-                            {t('Читать далее...')}
+                            <Button theme={ButtonTheme.OUTLINE}>
+                                {t('Читать далее...')}
+                            </Button>
                         </AppLink>
                         {views}
                     </div>
@@ -72,9 +74,9 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
 
     return (
         <AppLink
-            className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
             target={target}
             to={RoutePath.article_details + article.id}
+            className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
         >
             <Card className={cls.card}>
                 <div className={cls.imageWrapper}>
