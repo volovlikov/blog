@@ -1,4 +1,4 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { UISchema } from '../types/UISchema';
 
 const initialState: UISchema = {
@@ -15,5 +15,6 @@ export const uiSlice = createSlice({
     },
 });
 
+// Action creators are generated for each case reducer function
 export const { actions: uiActions } = uiSlice;
 export const { reducer: uiReducer } = uiSlice;

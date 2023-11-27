@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { CommentList } from './CommentList';
 
 export default {
-    title: 'shared/CommentList',
+    title: 'entities/Comment/CommentList',
     component: CommentList,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -18,7 +18,7 @@ Normal.args = {
     comments: [
         {
             id: '1',
-            text: 'Hello world',
+            text: 'hello world',
             user: { id: '1', username: 'Vasya' },
         },
         {

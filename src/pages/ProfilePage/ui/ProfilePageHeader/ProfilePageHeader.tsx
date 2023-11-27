@@ -21,11 +21,9 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
     } = props;
 
     const { t } = useTranslation('profile');
-
     const authData = useSelector(getUserAuthData);
     const profileData = useSelector(getProfileData);
     const canEdit = authData?.id === profileData?.id;
-
     const readonly = useSelector(getProfileReadonly);
     const dispatch = useAppDispatch();
 
