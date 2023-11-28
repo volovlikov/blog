@@ -6757,6 +6757,13 @@ eslint-module-utils@^2.7.2:
     debug "^3.2.7"
     find-up "^2.1.0"
 
+eslint-plugin-evgeny2-tv-plugin@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-evgeny2-tv-plugin/-/eslint-plugin-evgeny2-tv-plugin-0.0.2.tgz#3786a1d7092f8bebcb11494ffaca21d86be10819"
+  integrity sha512-bDYtJzx6+b7uTAlNMsTBVSpqV7zTlwh5FzpC3GYvmOHQX/PXsee1SiAmYS5uq5hO6HizZ0uJ3vGcaD5gzX71qA==
+  dependencies:
+    requireindex "^1.2.0"
+
 eslint-plugin-i18next@^5.1.2:
   version "5.1.2"
   resolved "https://registry.npmjs.org/eslint-plugin-i18next/-/eslint-plugin-i18next-5.1.2.tgz"
