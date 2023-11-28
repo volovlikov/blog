@@ -44,7 +44,6 @@ export interface FlexProps extends DivProps {
     max?: boolean;
 }
 
-
 export const Flex = (props: FlexProps) => {
     const {
         className,
