@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { EditableProfileCardHeader } from './EditableProfilePageHeader';
+import { EditableProfileCardHeader } from './EditableProfileCardHeader';
 
 export default {
     title: 'features/editableProfileCard/EditableProfileCardHeader',

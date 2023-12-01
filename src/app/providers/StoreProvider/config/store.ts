@@ -4,9 +4,9 @@ import { userReducer } from 'entities/User';
 import { $api } from 'shared/api/api';
 import { CombinedState, Reducer } from 'redux';
 import { uiReducer } from 'features/UI';
+import { rtkApi } from 'shared/api/rtkApi';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
 import { createReducerManager } from './reducerManager';
-import { rtkApi } from 'shared/api/rtkApi';
 
 export function createReduxStore(
     initialState?: StateSchema,
@@ -17,7 +17,7 @@ export function createReduxStore(
         counter: counterReducer,
         user: userReducer,
         ui: uiReducer,
-        [rtkApi.reducerPath]: rtkApi.reducer
+        [rtkApi.reducerPath]: rtkApi.reducer,
     };
 
     const reducerManager = createReducerManager(rootReducers);
