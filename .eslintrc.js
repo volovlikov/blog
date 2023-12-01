@@ -22,7 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
-        'evgeny2-tv-plugin',
+        'ulbi-tv-plugin',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -47,7 +47,9 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['as', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap'],
+                ignoreAttribute: [
+                    'as', 'role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap',
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 125 }],
@@ -59,7 +61,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'evgeny2-tv-plugin/path-checker': 'error',
+        'ulbi-tv-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
