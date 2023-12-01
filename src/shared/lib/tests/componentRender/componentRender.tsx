@@ -16,7 +16,7 @@ export function componentRender(component: ReactNode, options: componentRenderOp
     const {
         route = '/',
         initialState,
-        asyncReducers
+        asyncReducers,
     } = options;
 
     return render(
