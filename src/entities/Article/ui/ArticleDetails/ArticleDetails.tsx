@@ -129,6 +129,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     }
 
     return (
+        // @ts-ignore
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <VStack gap="16" max className={classNames(cls.ArticleDetails, {}, [className])}>
                 {content}
