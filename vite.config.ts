@@ -13,8 +13,8 @@ export default defineConfig({
         ],
     },
     define: {
-        __IS_DEV: JSON.stringify(true),
-        __API: JSON.stringify('http://localhost:8000'),
-        __PROJECT: JSON.stringify('frontend'),
+        __IS_DEV__: JSON.stringify(true),
+        __API__: JSON.stringify('http://localhost:8000'),
+        __PROJECT__: JSON.stringify('frontend'),
     },
 });
