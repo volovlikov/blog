@@ -1,5 +1,5 @@
 import {
-    ReactNode, createContext, useContext, useEffect, useMemo, useRef, useState,
+    createContext, ReactNode, useContext, useEffect, useMemo, useRef, useState,
 } from 'react';
 
 type SpringType = typeof import('@react-spring/web');
@@ -13,7 +13,7 @@ interface AnimationContextPayload {
 
 const AnimationContext = createContext<AnimationContextPayload>({});
 
-// Обе либы зависит друг от друга
+// Обе либы зависят друг от друга
 const getAsyncAnimationModules = async () => {
     return Promise.all([
         import('@react-spring/web'),
