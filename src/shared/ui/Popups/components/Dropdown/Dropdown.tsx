@@ -61,10 +61,9 @@ export function Dropdown(props: DropdownProps) {
 
                     return (
                         <Menu.Item
-                            as={Fragment}
-                            to={item.href}
-                            disabled={item.disabled}
                             key={`dropdown-key-${index}`}
+                            as={Fragment}
+                            disabled={item.disabled}
                         >
                             {content}
                         </Menu.Item>
